@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  
+}
+body{
+  background-color: rgba(114, 110, 110, 0.158);
+}
+
+.container {
+  max-width: 960px;
+  box-shadow: 0px 5px 10px -5px black;
+  padding: 1rem;
+  margin: 5% auto;
+  background-color: white;
+  border-radius: 1rem;
+}
+.b_table,
+.h_table {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin:2% auto;
+
+}
+
+.h_table {
+  font-size: 1.5rem;
+}
+
+
+p , form, a{
+  text-align: left;
+  width: 100%;
+  padding: 1rem 0%;
+  border-bottom: 0.1rem solid rgba(100, 95, 95, 0.452);
+}
+
