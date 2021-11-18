@@ -19,8 +19,7 @@ const logger = (req, res ,next) =>{
 //************************ */
 //      CONFIG
 //************************ */
-var port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
+
 
 // Use router and set /item in ifront of URL
 app.use(logger);
@@ -40,4 +39,4 @@ app.use('/', indexRouter);
 
 
 
-app.listen(port, () => console.log(`Server kör via port ${post}`));
+app.listen(port, () => console.log(`Server kör via port ${port}`));

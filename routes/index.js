@@ -5,7 +5,10 @@ var jsonCourse = require("../Courses");
 // Get start page
 router.get("/courses", (req, res) => {
     
+
+  // FOR POSTMAN TEST
   //res.send(jsonCourse );
+
   res.render("courses", { courses: jsonCourse});
 
 });
@@ -15,6 +18,8 @@ router.get("/courses", (req, res) => {
 router.get("/courses/:id", (req, res) => {
     idToPrint= parseInt(req.params.id);
     theCourse = jsonCourse.filter(course => course._id === idToPrint );
+
+    // FOR POSTMAN TEST
     //res.send(jsonCourse);
     res.render('course', {course: theCourse});
   });
@@ -27,6 +32,8 @@ router.delete("/courses/:id",  (req, res) => {
 
   // Update the list and send a message
   jsonCourse = jsonCourse.filter(course => course._id != idToDelete );
+
+  // FOR POSTMAN TEST
     //res.send(jsonCourse);
     res.redirect("/courses");
   });
